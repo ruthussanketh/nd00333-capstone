@@ -98,12 +98,11 @@ warm_start | False
 To improve the results, k-fold cross validation can be used, the time of the experiment can be increased and some of the estimators that we know are not going to produce good results can be blocked. Feature selection and engineering can also be performed. 
 
 The `RunDetails` widget:
-![](images/run_details_widget.png)
+![](images/automl_run_details.png)
 
 The best model with its run id and other metrics:
-![](images/best_model1.png)
-![](images/best_model2.png)
-![](images/best_model3.png)
+![](images/best_run1.png)
+![](images/best_run2.png)
 
 ## Hyperparameter Tuning
 
@@ -145,7 +144,8 @@ The best model with its run id:
 The model with the highest prediction score was deployed. In this experiment, the AutoML model demonstrated the best performance. The model was deployed as a web service to an Azure Container Instance (ACI), using the environment of the best run and the entry script (score.py) that was generated with the model. The script initializes the service and runs the model using request data.
 
 Model endpoint is active:
-![](images/active_endpoint_hd.png)
+![](images/active_endpoint1.png)
+![](images/active_endpoint2.png)
 
 To query the endpoint, a sample input (the clinical features of the first three patients in the dataset) was created, converted it to a JSON string and an HTTP Post request was sent to the endpoint:
 
@@ -159,5 +159,5 @@ headers = {'Content-Type': 'application/json'}
 resp = requests.post(scoring_uri, input_data, headers=headers)
 ```
 ## Screen Recording
-The screencast submission can be found [here]().
+The screencast submission can be found [here](https://drive.google.com/file/d/1e9MXyuj3f_XF2RH90xfQ7M0hoIIcgG2a/view?usp=sharing).
 
