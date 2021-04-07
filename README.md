@@ -159,6 +159,5 @@ headers = {'Content-Type': 'application/json'}
 resp = requests.post(scoring_uri, input_data, headers=headers)
 ```
 ## Screen Recording
-The screencast submission can be found [here](https://drive.google.com/file/d/1e9MXyuj3f_XF2RH90xfQ7M0hoIIcgG2a/view?usp=sharing).
-Resubmission screencast can be found [here](https://drive.google.com/file/d/1QK4qIEYHtzoXRUbfq1zzQhafnEiPWtfz/view?usp=sharing).
+The screencast submission can be found [here](https://drive.google.com/file/d/1wdH_zBxQHuTA_wUW30SRMJJq3Tgn0Dqy/view?usp=sharing).
 
