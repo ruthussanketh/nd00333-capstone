@@ -158,6 +158,3 @@ input_data = json.dumps({
 headers = {'Content-Type': 'application/json'}
 resp = requests.post(scoring_uri, input_data, headers=headers)
 ```
-## Screen Recording
-The screencast submission can be found [here](https://drive.google.com/file/d/1wdH_zBxQHuTA_wUW30SRMJJq3Tgn0Dqy/view?usp=sharing).
-
